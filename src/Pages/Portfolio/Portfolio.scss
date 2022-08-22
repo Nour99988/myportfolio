@@ -1,0 +1,71 @@
+@import "../../style/general-class";
+@import "../../style/var";
+
+.portfolio {
+  .contener {
+    .content {
+      display: flex;
+      .card {
+        width: 25%;
+        position: relative;
+        overflow: hidden;
+        &:hover .details {
+          width: 100%;
+          height: 100%;
+          visibility: visible;
+        }
+        img {
+          width: 100%;
+        }
+        .details {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 70%;
+          height: 70%;
+          gap: 15px;
+          //   border-radius: 25px;
+          visibility: hidden;
+          background-color: rgba(0, 0, 0, 0.5);
+          transition: all 0.5s ease-in-out;
+          //   position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 15px;
+            left: 15px;
+            border-top: 3px solid #fff;
+            border-left: 3px solid #fff;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            bottom: 15px;
+            right: 15px;
+            border-bottom: 3px solid #fff;
+            border-right: 3px solid #fff;
+          }
+          p,
+          a {
+            cursor: pointer;
+            color: #fff;
+            font-size: 30px;
+            padding: 2px;
+            transition: color 0.3s;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

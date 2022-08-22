@@ -1,0 +1,24 @@
+@import "../../style/var";
+@import "../../style/general-class";
+
+.navbar {
+  background-color: $dark-color;
+  position: fixed;
+  width: 100vw;
+  // height: 150px;
+  z-index: 999;
+  padding-bottom: 10px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 131px;
+    padding: 15px 13px 0px;
+    color: $white-color;
+    font-family: open;
+    .name {
+      font-size: 36px;
+      font-weight: 800;
+    }
+  }
+}

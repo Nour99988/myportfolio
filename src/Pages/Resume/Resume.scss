@@ -1,0 +1,22 @@
+@import "../../style/general-class";
+@import "../../style/var";
+
+.resume {
+  .contener {
+    & > .content {
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        width: 48%;
+        .items {
+          padding-left: 20px;
+          .date {
+            background-color: #ffffff26;
+            width: fit-content;
+            padding: 5px 15px;
+          }
+        }
+      }
+    }
+  }
+}

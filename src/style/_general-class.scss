@@ -1,0 +1,80 @@
+@import "./var";
+
+.span-line {
+  font-size: 14px;
+  color: $dark-write-color;
+  font-weight: 400;
+  letter-spacing: 2px;
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    margin-left: 10px;
+    height: 1px;
+    width: 120px;
+    background-color: $primary-color;
+  }
+}
+.big-header {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: $white-color;
+}
+.mid-header {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: $primary-color;
+}
+
+.mid-header-circle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: $primary-color;
+  position: relative;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    display: inline-block;
+    margin-right: 13px;
+    margin-left: -29px;
+  }
+}
+.left-line {
+  position: relative;
+  &::after {
+    content: "";
+    left: -2px;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.mid-white-header {
+  font-size: 26px;
+  color: $white-color;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.page {
+  padding-top: 100px;
+}
+
+.contener {
+  width: 80vw;
+  color: #fff;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+}

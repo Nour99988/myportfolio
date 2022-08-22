@@ -1,0 +1,145 @@
+.span-line {
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 400;
+  letter-spacing: 2px;
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+.span-line::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  margin-left: 10px;
+  height: 1px;
+  width: 120px;
+  background-color: #18d26e;
+}
+
+.big-header {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.mid-header {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #18d26e;
+}
+
+.mid-header-circle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #18d26e;
+  position: relative;
+}
+.mid-header-circle::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #18d26e;
+  display: inline-block;
+  margin-right: 13px;
+  margin-left: -29px;
+}
+
+.left-line {
+  position: relative;
+}
+.left-line::after {
+  content: "";
+  left: -2px;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.mid-white-header {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.page {
+  padding-top: 100px;
+}
+
+.contener {
+  width: 80vw;
+  color: #fff;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.portfolio .contener .content {
+  display: flex;
+}
+.portfolio .contener .content .card {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .contener .content .card:hover .details {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+}
+.portfolio .contener .content .card img {
+  width: 100%;
+}
+.portfolio .contener .content .card .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  gap: 15px;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+.portfolio .contener .content .card .details::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 15px;
+  left: 15px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+.portfolio .contener .content .card .details::before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  bottom: 15px;
+  right: 15px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+.portfolio .contener .content .card .details p,
+.portfolio .contener .content .card .details a {
+  cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+  padding: 2px;
+  transition: color 0.3s;
+}
+.portfolio .contener .content .card .details p:hover,
+.portfolio .contener .content .card .details a:hover {
+  color: #18d26e;
+}/*# sourceMappingURL=Portfolio.css.map */

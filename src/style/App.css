@@ -1,0 +1,23 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App .background {
+  width: 100vw;
+  position: fixed;
+  z-index: -10;
+}
+.App .background img {
+  width: 100%;
+}/*# sourceMappingURL=App.css.map */

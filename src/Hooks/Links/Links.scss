@@ -1,0 +1,42 @@
+@import "../../style/var";
+
+ul.links {
+  display: flex;
+  padding-top: 15px;
+
+  li {
+    &:not(:first-child) {
+      margin-left: 25px;
+    }
+    .active {
+      color: $white-color;
+    }
+    .active::after {
+      width: 45%;
+    }
+
+    a {
+      color: $white-color2;
+      padding: 5px;
+      position: relative;
+      transition: color 1s;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        left: 5px;
+        width: 0px;
+        height: 2px;
+        background-color: $primary-color;
+        transition: width 1s;
+      }
+
+      &:hover::after {
+        width: 45%;
+      }
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
+}

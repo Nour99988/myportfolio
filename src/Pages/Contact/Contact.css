@@ -1,0 +1,165 @@
+.span-line {
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 400;
+  letter-spacing: 2px;
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+.span-line::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  margin-left: 10px;
+  height: 1px;
+  width: 120px;
+  background-color: #18d26e;
+}
+
+.big-header {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.mid-header {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #18d26e;
+}
+
+.mid-header-circle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #18d26e;
+  position: relative;
+}
+.mid-header-circle::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #18d26e;
+  display: inline-block;
+  margin-right: 13px;
+  margin-left: -29px;
+}
+
+.left-line {
+  position: relative;
+}
+.left-line::after {
+  content: "";
+  left: -2px;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.mid-white-header {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.page {
+  padding-top: 100px;
+}
+
+.contener {
+  width: 80vw;
+  color: #fff;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.contact .contener .content .information {
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.contact .contener .content .information > div {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.contact .contener .content .information > div .title {
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+.contact .contener .content .information > div a {
+  color: #ffffff;
+}
+.contact .contener .content .information > div .m-icon {
+  width: 45px;
+  height: 45px;
+  font-size: 26px;
+  margin-right: 25px;
+  color: #18d26e;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contener .content .information > div .m-icon svg {
+  width: 100%;
+}
+.contact .contener .content .form form {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.0784313725);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+.contact .contener .content .form form input,
+.contact .contener .content .form form textarea {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.contact .contener .content .form form input:focus,
+.contact .contener .content .form form textarea:focus {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+.contact .contener .content .form form .name {
+  width: 48%;
+}
+.contact .contener .content .form form .email {
+  width: 48%;
+}
+.contact .contener .content .form form .subject {
+  width: 100%;
+}
+.contact .contener .content .form form textarea {
+  resize: vertical;
+  width: 100%;
+  min-height: 150px;
+}
+.contact .contener .content .form form .submit {
+  background-color: #18d26e;
+  display: block;
+  margin: auto;
+  color: #fff;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 4px;
+}/*# sourceMappingURL=Contact.css.map */

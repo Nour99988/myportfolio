@@ -1,0 +1,35 @@
+ul.links {
+  display: flex;
+  padding-top: 15px;
+}
+ul.links li:not(:first-child) {
+  margin-left: 25px;
+}
+ul.links li .active {
+  color: #ffffff;
+}
+ul.links li .active::after {
+  width: 45%;
+}
+ul.links li a {
+  color: rgba(255, 255, 255, 0.7019607843);
+  padding: 5px;
+  position: relative;
+  transition: color 1s;
+}
+ul.links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+  width: 0px;
+  height: 2px;
+  background-color: #18d26e;
+  transition: width 1s;
+}
+ul.links li a:hover::after {
+  width: 45%;
+}
+ul.links li a:hover {
+  color: #ffffff;
+}/*# sourceMappingURL=Links.css.map */

@@ -3,19 +3,29 @@ import "./Contact.css";
 import { Share, Envelope, Telephone, GeoAlt, Linkedin, Github } from "react-bootstrap-icons";
 import { motion } from "framer-motion";
 import Navbar from "../../Hooks/Navbar/Navbar";
+import usestyle from "../../Hooks/style/usestyle";
 
 const Contact = () => {
-  const variants = {
-    initial: {},
-  };
+  // const variants = {
+  //   initial: {},
+  // };
+  const { variant } = usestyle();
   return (
     <>
       <Navbar />
-      <motion.div
+      {/* <motion.div
         initial={{ y: -1500 }}
         animate={{ y: 0 }}
         exit={{ x: "100vw", transition: { duration: 0.2 } }}
         transition={{ duration: 0.2, ease: "easeInOut", type: "spring", stiffness: "120" }}
+        className="contact page"
+      > */}
+      <motion.div
+        variants={variant}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        // transition="transition"
         className="contact page"
       >
         <div className="contener">

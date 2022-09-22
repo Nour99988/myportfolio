@@ -1,85 +1,3 @@
-.span-line {
-  font-size: 14px;
-  color: #aaa;
-  font-weight: 400;
-  letter-spacing: 2px;
-  position: relative;
-  display: block;
-  margin-bottom: 15px;
-}
-.span-line::after {
-  content: "";
-  position: absolute;
-  bottom: 6px;
-  margin-left: 10px;
-  height: 1px;
-  width: 120px;
-  background-color: #18d26e;
-}
-
-.big-header {
-  font-size: 34px;
-  font-weight: 800;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.mid-header {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #18d26e;
-}
-
-.mid-header-circle {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #18d26e;
-  position: relative;
-}
-.mid-header-circle::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #18d26e;
-  display: inline-block;
-  margin-right: 13px;
-  margin-left: -29px;
-}
-
-.left-line {
-  position: relative;
-}
-.left-line::after {
-  content: "";
-  left: -2px;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.mid-white-header {
-  font-size: 26px;
-  color: #ffffff;
-  font-weight: 700;
-  margin: 20px 0;
-}
-
-.page {
-  padding-top: 100px;
-}
-
-.contener {
-  width: 80vw;
-  color: #fff;
-  margin: auto;
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
 .about .contener .personal {
   display: flex;
   flex-direction: row;
@@ -163,19 +81,25 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.about .contener .skills .skills-con .skill {
+.about .contener .skills .skills-con .left,
+.about .contener .skills .skills-con .right {
   width: 48%;
+}
+.about .contener .skills .skills-con .left .skill,
+.about .contener .skills .skills-con .right .skill {
   margin: 15px 0;
 }
-.about .contener .skills .skills-con .skill .head {
+.about .contener .skills .skills-con .left .skill .head,
+.about .contener .skills .skills-con .right .skill .head {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
   font-weight: 600;
 }
-.about .contener .skills .skills-con .skill .bar {
+.about .contener .skills .skills-con .left .skill .bar,
+.about .contener .skills .skills-con .right .skill .bar {
   margin-top: 5px;
-  width: 100%;
   height: 8px;
+  display: block;
   background-color: #18d26e;
 }/*# sourceMappingURL=About.css.map */

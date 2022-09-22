@@ -1,4 +1,4 @@
-@import "../../style/general-class";
+// @import "../../style/general-class";
 @import "../../style/var";
 
 .resume {
@@ -14,6 +14,16 @@
             background-color: #ffffff26;
             width: fit-content;
             padding: 5px 15px;
+          }
+          .description {
+            line-height: 25px;
+            a {
+              color: $primary-color;
+              margin: 10px;
+            }
+            p {
+              margin-bottom: 10px;
+            }
           }
         }
       }

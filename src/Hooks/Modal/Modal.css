@@ -1,1 +1,85 @@
-/*# sourceMappingURL=Modal.css.map */
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1500;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+  z-index: 1600;
+  color: #fff;
+  margin: auto;
+  padding: 10px;
+}
+.overlay .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.overlay .header .close {
+  font-size: 50px;
+  cursor: pointer;
+}
+.overlay .header .title {
+  font-size: 26px;
+  font-weight: 600;
+}
+.overlay .content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .overlay .content {
+    display: block;
+  }
+}
+.overlay .content .img {
+  width: 60.6%;
+  min-width: 700px;
+  height: 60vh;
+  overflow: auto;
+}
+.overlay .content .img::-webkit-scrollbar {
+  visibility: hidden;
+}
+@media (max-width: 1000px) {
+  .overlay .content .img {
+    width: 100%;
+    min-width: 350px;
+  }
+}
+.overlay .content .img img {
+  width: 100%;
+  -webkit-animation: test 50s linear 0s infinite alternate;
+          animation: test 50s linear 0s infinite alternate;
+}
+.overlay .content .desc {
+  width: 33.3%;
+  padding-top: 25px;
+}
+@media (max-width: 1000px) {
+  .overlay .content .desc {
+    width: 100%;
+  }
+}
+.overlay .content .desc p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 800;
+}
+.overlay .content .desc p:first-child {
+  font-size: 22px;
+  font-weight: 400;
+}
+.overlay .content .desc p span {
+  font-weight: 400;
+  padding: 0 15px;
+}/*# sourceMappingURL=Modal.css.map */

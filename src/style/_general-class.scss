@@ -72,9 +72,35 @@
 }
 
 .contener {
-  width: 80vw;
+  width: calc(100% - 20vw);
   color: #fff;
   margin: auto;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.9);
+}
+@media only screen and (max-width: 1350px) {
+  .contener {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contener {
+    width: 95vw;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contener {
+    width: 100vw;
+  }
+}
+
+@keyframes test {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, calc(-100% + 60vh));
+  }
 }

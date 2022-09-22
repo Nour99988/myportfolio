@@ -4,16 +4,27 @@ import { ChevronRight, EmojiSmile, JournalAlbum, Headset, Award } from "react-bo
 import { motion } from "framer-motion";
 import "./About.css";
 import Navbar from "../../Hooks/Navbar/Navbar";
+import usestyle from "../../Hooks/style/usestyle";
 
 const About = () => {
+  const { variant, variantProgress } = usestyle();
   return (
     <>
       <Navbar />
-      <motion.div
+      {/* <motion.div
         initial={{ y: -1500 }}
         animate={{ y: 0 }}
         exit={{ x: "100vw", transition: { duration: 0.2 } }}
         transition={{ duration: 0.2, ease: "easeInOut", type: "spring", stiffness: "120" }}
+        className="about page"
+      > */}
+
+      <motion.div
+        variants={variant}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        // transition="transition"
         className="about page"
       >
         <div className="contener">
@@ -48,7 +59,7 @@ const About = () => {
                   <ChevronRight /> <span>Phone: </span> +963 36825713{" "}
                 </p>
                 <p>
-                  <ChevronRight /> <span>PhEmailone: </span> m.nour.kh9346@gmail.com
+                  <ChevronRight /> <span>Emai: </span> m.nour.kh9346@gmail.com
                 </p>
                 <p>
                   <ChevronRight /> <span>City: </span> Damascus Syria
@@ -91,47 +102,87 @@ const About = () => {
           <div className="skills">
             <span className="span-line">SKILLS</span>
             <div className="skills-con">
-              <div className="skill">
-                <div className="head">
-                  <span>HTML : </span>
-                  <span>100%</span>
+              <div className="left">
+                <div className="skill">
+                  <div className="head">
+                    <span> HTML : </span>
+                    <span>100%</span>
+                  </div>
+                  <motion.div
+                    variants={variantProgress}
+                    initial="hidden"
+                    animate="visible"
+                    custom="100%"
+                    className="bar"
+                  />
                 </div>
-                <div className="bar"></div>
+                <div className="skill">
+                  <div className="head">
+                    <span>CSS : </span>
+                    <span>100%</span>
+                  </div>
+                  <motion.div
+                    variants={variantProgress}
+                    initial="hidden"
+                    animate="visible"
+                    custom="100%"
+                    className="bar"
+                  />
+                </div>
+                <div className="skill">
+                  <div className="head">
+                    <span>Javascript : </span>
+                    <span>70%</span>
+                  </div>
+                  <motion.div
+                    variants={variantProgress}
+                    initial="hidden"
+                    animate="visible"
+                    custom="70%"
+                    className="bar"
+                  />
+                </div>
               </div>
-              <div className="skill">
-                <div className="head">
-                  <span>CSS : </span>
-                  <span>70%</span>
+              <div className="right">
+                <div className="skill">
+                  <div className="head">
+                    <span>React : </span>
+                    <span>80%</span>
+                  </div>
+                  <motion.div
+                    variants={variantProgress}
+                    initial="hidden"
+                    animate="visible"
+                    custom="80%"
+                    className="bar"
+                  />
                 </div>
-                <div className="bar"></div>
-              </div>
-              <div className="skill">
-                <div className="head">
-                  <span>Javascript : </span>
-                  <span>70%</span>
+                <div className="skill">
+                  <div className="head">
+                    <span>Node Js : </span>
+                    <span>60%</span>
+                  </div>
+                  <motion.div
+                    variants={variantProgress}
+                    initial="hidden"
+                    animate="visible"
+                    custom="60%"
+                    className="bar"
+                  />
                 </div>
-                <div className="bar"></div>
-              </div>
-              <div className="skill">
-                <div className="head">
-                  <span>React : </span>
-                  <span>70%</span>
+                <div className="skill">
+                  <div className="head">
+                    <span>Express : </span>
+                    <span>60%</span>
+                  </div>
+                  <motion.div
+                    variants={variantProgress}
+                    initial="hidden"
+                    animate="visible"
+                    custom="60%"
+                    className="bar"
+                  />
                 </div>
-                <div className="bar"></div>
-              </div>
-              <div className="skill">
-                <div className="head">
-                  <span>Node Js : </span>
-                  <span>70%</span>
-                </div>
-                <div className="bar"></div>
-              </div>
-              <div className="skill">
-                <div className="head">
-                  <span>php : </span>
-                  <span>25%</span>
-                </div>
-                <div className="bar"></div>
               </div>
             </div>
           </div>

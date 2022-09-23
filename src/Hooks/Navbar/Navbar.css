@@ -71,6 +71,11 @@
 .page {
   padding-top: 100px;
 }
+@media screen and (max-width: 1000px) {
+  .page {
+    padding-top: 15px;
+  }
+}
 
 .contener {
   width: calc(100% - 20vw);
@@ -92,7 +97,8 @@
 }
 @media only screen and (max-width: 1000px) {
   .contener {
-    width: 100vw;
+    width: 100%;
+    padding: 15px;
   }
 }
 @-webkit-keyframes test {
@@ -111,12 +117,23 @@
     transform: translate(0, calc(-100% + 60vh));
   }
 }
+@media only screen and (max-width: 900px) {
+  .wrap {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+}
 .navbar {
   background-color: rgba(0, 0, 0, 0.9019607843);
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 999;
   padding-bottom: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
 }
 .navbar .content {
   display: flex;

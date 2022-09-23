@@ -30,11 +30,11 @@ const About = () => {
         <div className="contener">
           <span className="span-line">ABOUT</span>
           <div className="big-header">LEARN MORE ABOUT ME</div>
-          <div className="personal">
+          <div className=" personal wrap">
             <div className="img">
               <img src="./img/me.jpg" alt="me" />
             </div>
-            <div className="content">
+            <div className="content ">
               <div className="mid-header">
                 Front End Developer <br />
                 <p className="desc">

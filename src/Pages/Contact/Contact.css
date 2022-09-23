@@ -6,6 +6,11 @@
   align-items: center;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 700px) {
+  .contact .contener .content .information {
+    grid-template-columns: 1fr;
+  }
+}
 .contact .contener .content .information > div {
   background-color: rgba(255, 255, 255, 0.08);
   padding: 20px;
@@ -20,6 +25,7 @@
 }
 .contact .contener .content .information > div a {
   color: #ffffff;
+  margin-right: 17px;
 }
 .contact .contener .content .information > div .m-icon {
   width: 45px;
@@ -44,6 +50,11 @@
   justify-content: space-between;
   gap: 25px;
 }
+@media screen and (max-width: 732px) {
+  .contact .contener .content .form form {
+    padding: 15px;
+  }
+}
 .contact .contener .content .form form input,
 .contact .contener .content .form form textarea {
   color: #ffffff;
@@ -61,8 +72,18 @@
 .contact .contener .content .form form .name {
   width: 48%;
 }
+@media screen and (max-width: 732px) {
+  .contact .contener .content .form form .name {
+    width: 100%;
+  }
+}
 .contact .contener .content .form form .email {
   width: 48%;
+}
+@media screen and (max-width: 732px) {
+  .contact .contener .content .form form .email {
+    width: 100%;
+  }
 }
 .contact .contener .content .form form .subject {
   width: 100%;

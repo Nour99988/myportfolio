@@ -2,23 +2,36 @@
 
 .home {
   height: 100vh;
-  // background-size: cover;
-  // background-repeat: no-repeat;
   position: relative;
   .content {
     position: absolute;
     top: 35%;
     left: 140px;
+    @media screen and (max-width: 1000px) {
+      left: 75px;
+    }
+    @media screen and (max-width: 800px) {
+      width: 95%;
+      text-align: center;
+      left: 0px;
+      top: 40%;
+    }
     .name {
       font-size: 45px;
       color: $white-color;
       font-weight: 600;
       margin-bottom: 15px;
+      @media screen and (max-width: 800px) {
+        font-size: 28px;
+      }
     }
     h1 {
       color: $white-color2;
       font-size: 28px;
       font-weight: 400;
+      @media screen and (max-width: 800px) {
+        font-size: 20px;
+      }
     }
   }
 }

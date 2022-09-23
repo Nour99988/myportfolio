@@ -9,7 +9,7 @@ import Resume from "./Pages/Resume/Resume";
 import Services from "./Pages/Services/Services";
 import Contact from "./Pages/Contact/Contact";
 import { AnimatePresence } from "framer-motion";
-
+import NavbarForMobile from "./Hooks/NavbarForMobile/NavbarForMobile";
 function App() {
   const location = useLocation();
   return (
@@ -19,6 +19,7 @@ function App() {
       </div>
 
       <AnimatePresence exitBeforeEnter>
+        <NavbarForMobile />
         <Routes location={location} key={location.key}>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />

@@ -20,7 +20,7 @@
 }
 .about .contener .personal .content .mid-header p {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .about .contener .personal .content .flex {
@@ -32,6 +32,11 @@
   width: 50%;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 900px) {
+  .about .contener .personal .content .flex p {
+    min-width: 300px;
+  }
+}
 .about .contener .personal .content .flex p svg {
   color: #18d26e;
   margin-right: 3px;
@@ -41,16 +46,19 @@
 }
 .about .contener .counters {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   align-content: center;
 }
 .about .contener .counters div {
   width: 23%;
+  min-width: 160px;
   background-color: rgba(255, 255, 255, 0.08);
   text-align: center;
   padding: 20px;
   position: relative;
+  margin-bottom: 50px;
 }
 .about .contener .counters div span:first-of-type {
   display: block;
@@ -73,9 +81,6 @@
   transform: translate(-50%);
   box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.0784313725);
 }
-.about .contener .skills {
-  margin-top: 50px;
-}
 .about .contener .skills .skills-con {
   display: flex;
   justify-content: space-between;
@@ -84,6 +89,12 @@
 .about .contener .skills .skills-con .left,
 .about .contener .skills .skills-con .right {
   width: 48%;
+}
+@media screen and (max-width: 700px) {
+  .about .contener .skills .skills-con .left,
+.about .contener .skills .skills-con .right {
+    width: 100%;
+  }
 }
 .about .contener .skills .skills-con .left .skill,
 .about .contener .skills .skills-con .right .skill {

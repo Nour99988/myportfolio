@@ -1,9 +1,16 @@
 .resume .contener > .content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .resume .contener > .content > div {
   width: 48%;
+}
+@media screen and (max-width: 900px) {
+  .resume .contener > .content > div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 .resume .contener > .content > div .items {
   padding-left: 20px;

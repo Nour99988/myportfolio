@@ -11,6 +11,9 @@
         gap: 25px;
         align-items: center;
         margin-bottom: 25px;
+        @media screen and (max-width: 700px) {
+          grid-template-columns: 1fr;
+        }
         & > div {
           background-color: rgba(255, 255, 255, 0.08);
           padding: 20px;
@@ -25,6 +28,7 @@
           }
           a {
             color: $white-color;
+            margin-right: 17px;
           }
           .m-icon {
             width: 45px;
@@ -52,6 +56,9 @@
           flex-wrap: wrap;
           justify-content: space-between;
           gap: 25px;
+          @media screen and (max-width: 732px) {
+            padding: 15px;
+          }
           input,
           textarea {
             color: $white-color;
@@ -70,9 +77,15 @@
           }
           .name {
             width: 48%;
+            @media screen and(max-width: 732px) {
+              width: 100%;
+            }
           }
           .email {
             width: 48%;
+            @media screen and(max-width: 732px) {
+              width: 100%;
+            }
           }
           .subject {
             width: 100%;

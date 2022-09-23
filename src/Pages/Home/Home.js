@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <>
       {/* <Navbar /> */}
+
       <div
         // initial={{ y: -1500 }}
         // animate={{ y: 0 }}

@@ -5,25 +5,35 @@
   .contener {
     .content {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
+      @media screen and (max-width: 750px) {
+        display: block;
+        text-align: center;
+      }
       .card {
-        // width: 25%;
-        width: 344px;
+        width: 25%;
+        min-width: 300px;
+        max-width: 344px;
         height: 285px;
         position: relative;
         overflow: hidden;
+        margin: auto;
+        margin-top: 25px;
+
         &:hover .details {
           width: 100%;
           height: 100%;
           visibility: visible;
         }
         .img {
-          width: 344px;
-          height: 285px;
-        }
-        img {
           width: 100%;
+          // height: 285px;
+          img {
+            width: 100%;
+          }
         }
+
         .details {
           display: flex;
           justify-content: center;

@@ -2,6 +2,11 @@ ul.links {
   display: flex;
   padding-top: 15px;
 }
+@media screen and (max-width: 1000px) {
+  ul.links {
+    display: none;
+  }
+}
 ul.links li:not(:first-child) {
   margin-left: 25px;
 }

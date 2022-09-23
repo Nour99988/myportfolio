@@ -3,6 +3,9 @@
 ul.links {
   display: flex;
   padding-top: 15px;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 
   li {
     &:not(:first-child) {

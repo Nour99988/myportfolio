@@ -7,14 +7,37 @@
   top: 35%;
   left: 140px;
 }
+@media screen and (max-width: 1000px) {
+  .home .content {
+    left: 75px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home .content {
+    width: 95%;
+    text-align: center;
+    left: 0px;
+    top: 40%;
+  }
+}
 .home .content .name {
   font-size: 45px;
   color: #ffffff;
   font-weight: 600;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 800px) {
+  .home .content .name {
+    font-size: 28px;
+  }
+}
 .home .content h1 {
   color: rgba(255, 255, 255, 0.7019607843);
   font-size: 28px;
   font-weight: 400;
+}
+@media screen and (max-width: 800px) {
+  .home .content h1 {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=Home.css.map */

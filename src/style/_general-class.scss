@@ -69,6 +69,9 @@
 
 .page {
   padding-top: 100px;
+  @media screen and(max-width: 1000px) {
+    padding-top: 15px;
+  }
 }
 
 .contener {
@@ -91,7 +94,8 @@
 }
 @media only screen and (max-width: 1000px) {
   .contener {
-    width: 100vw;
+    width: 100%;
+    padding: 15px;
   }
 }
 
@@ -102,5 +106,12 @@
 
   100% {
     transform: translate(0, calc(-100% + 60vh));
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .wrap {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
   }
 }

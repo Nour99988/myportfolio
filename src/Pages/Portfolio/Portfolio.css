@@ -1,12 +1,23 @@
 .portfolio .contener .content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 750px) {
+  .portfolio .contener .content {
+    display: block;
+    text-align: center;
+  }
+}
 .portfolio .contener .content .card {
-  width: 344px;
+  width: 25%;
+  min-width: 300px;
+  max-width: 344px;
   height: 285px;
   position: relative;
   overflow: hidden;
+  margin: auto;
+  margin-top: 25px;
 }
 .portfolio .contener .content .card:hover .details {
   width: 100%;
@@ -14,10 +25,9 @@
   visibility: visible;
 }
 .portfolio .contener .content .card .img {
-  width: 344px;
-  height: 285px;
+  width: 100%;
 }
-.portfolio .contener .content .card img {
+.portfolio .contener .content .card .img img {
   width: 100%;
 }
 .portfolio .contener .content .card .details {

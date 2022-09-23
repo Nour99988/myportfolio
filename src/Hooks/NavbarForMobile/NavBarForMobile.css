@@ -1,8 +1,3 @@
-@media screen and (max-width: 1000px) {
-  body {
-    overflow: hidden;
-  }
-}
 .navForMobile {
   display: none;
   color: red;

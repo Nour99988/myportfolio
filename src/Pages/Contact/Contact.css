@@ -19,7 +19,7 @@
 }
 .contact .contener .content .information > div .title {
   color: rgba(255, 255, 255, 0.5019607843);
-  font-size: 20px;
+  font-size: 1.25rem;
   display: block;
   margin-bottom: 10px;
 }
@@ -30,7 +30,7 @@
 .contact .contener .content .information > div .m-icon {
   width: 45px;
   height: 45px;
-  font-size: 26px;
+  font-size: 1.625rem;
   margin-right: 25px;
   color: #18d26e;
   border-radius: 50%;
@@ -63,7 +63,7 @@
   outline: none;
   transition: all 0.3s;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .contact .contener .content .form form input:focus,
 .contact .contener .content .form form textarea:focus {

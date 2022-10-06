@@ -1,9 +1,6 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import "./NavBarForMobile.css";
 import { NavLink } from "react-router-dom";
-import Links from "../Links/Links";
-import { useEffect } from "react";
-import { useState } from "react";
 
 const NavbarForMobile = () => {
   const [show, setShow] = useState(true);
@@ -11,7 +8,6 @@ const NavbarForMobile = () => {
   const toogleShow = () => {
     show ? setX(0) : setX(100);
     setShow(!show);
-    show ? (document.body.style.overflowY = "hidden") : (document.body.style.overflowY = "visible");
   };
   return (
     <div className="navForMobile">

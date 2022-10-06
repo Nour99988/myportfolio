@@ -13,6 +13,9 @@
         // min-width: 350px;
         flex: 0 0 auto;
         padding: 0 12px;
+        @media only screen and (max-width: 900px) {
+          width: 75%;
+        }
         img {
           max-width: 100%;
         }
@@ -67,15 +70,20 @@
         padding: 20px;
         position: relative;
         margin-bottom: 50px;
+        @media screen and (max-width: 370px) {
+          // min-width: 150px;
+          // margin: 1px;
+          // margin-bottom: 30px;
+        }
 
         span {
           &:first-of-type {
             display: block;
-            font-size: 36px;
+            font-size: 2.25rem;
           }
           &:last-of-type {
             display: block;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: 200;
           }
         }
@@ -116,7 +124,7 @@
             .head {
               display: flex;
               justify-content: space-between;
-              font-size: 12px;
+              font-size: 0.75rem;
               font-weight: 600;
             }
             .bar {

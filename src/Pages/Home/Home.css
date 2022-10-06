@@ -1,43 +1,49 @@
+@media screen and (max-width: 800px) {
+  .homeMobile {
+    display: block;
+  }
+  .home .content {
+    display: none;
+  }
+}
 .home {
   height: 100vh;
   position: relative;
 }
-.home .content {
+.home .homeMobile {
+  display: none;
+}
+.home .content,
+.home .homeMobile {
   position: absolute;
   top: 35%;
   left: 140px;
 }
 @media screen and (max-width: 1000px) {
-  .home .content {
+  .home .content,
+.home .homeMobile {
     left: 75px;
   }
 }
 @media screen and (max-width: 800px) {
-  .home .content {
+  .home .content,
+.home .homeMobile {
     width: 95%;
     text-align: center;
     left: 0px;
     top: 40%;
   }
 }
-.home .content .name {
-  font-size: 45px;
+.home .content .name,
+.home .homeMobile .name {
+  font-size: 2.8125rem;
   color: #ffffff;
   font-weight: 600;
   margin-bottom: 15px;
 }
-@media screen and (max-width: 800px) {
-  .home .content .name {
-    font-size: 28px;
-  }
-}
-.home .content h1 {
+.home .content .desc,
+.home .homeMobile .desc {
   color: rgba(255, 255, 255, 0.7019607843);
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
-}
-@media screen and (max-width: 800px) {
-  .home .content h1 {
-    font-size: 20px;
-  }
 }/*# sourceMappingURL=Home.css.map */

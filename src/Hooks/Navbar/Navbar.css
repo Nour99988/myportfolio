@@ -1,5 +1,5 @@
 .span-line {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #aaa;
   font-weight: 400;
   letter-spacing: 2px;
@@ -18,32 +18,25 @@
 }
 
 .big-header {
-  font-size: 34px;
+  font-size: 2.125rem;
   font-weight: 800;
   margin-bottom: 10px;
   color: #ffffff;
 }
 @media screen and (max-width: 1000px) {
   .big-header {
-    font-size: 28px;
     font-weight: 600;
   }
 }
 
 .mid-header {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 600;
   margin-bottom: 10px;
   color: #18d26e;
 }
-@media screen and (max-width: 1000px) {
-  .mid-header {
-    font-size: 24px;
-  }
-}
-
 .mid-header-circle {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 10px;
   color: #18d26e;
@@ -73,7 +66,7 @@
 }
 
 .mid-white-header {
-  font-size: 26px;
+  font-size: 1.625rem;
   color: #ffffff;
   font-weight: 700;
   margin: 20px 0;
@@ -154,6 +147,6 @@
   font-family: open;
 }
 .navbar .content .name {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 800;
 }/*# sourceMappingURL=Navbar.css.map */

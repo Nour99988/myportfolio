@@ -9,6 +9,11 @@
   flex: 0 0 auto;
   padding: 0 12px;
 }
+@media only screen and (max-width: 900px) {
+  .about .contener .personal .img {
+    width: 75%;
+  }
+}
 .about .contener .personal .img img {
   max-width: 100%;
 }
@@ -62,11 +67,11 @@
 }
 .about .contener .counters div span:first-of-type {
   display: block;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 .about .contener .counters div span:last-of-type {
   display: block;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 200;
 }
 .about .contener .counters div .icon {
@@ -104,7 +109,7 @@
 .about .contener .skills .skills-con .right .skill .head {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 .about .contener .skills .skills-con .left .skill .bar,

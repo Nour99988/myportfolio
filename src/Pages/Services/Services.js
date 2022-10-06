@@ -20,9 +20,13 @@ const Services = () => {
         animate="animate"
         exit="exit"
         // transition="transition"
-        // className="resume page"
+        className="services page"
       >
-        Services
+        <div className="contener">
+          <p className="span-line ">PORTFOLIO</p>
+          <div className="big-header">MY WORKS</div>
+          <div className="content">fdfdf</div>
+        </div>
       </motion.div>
     </>
   );

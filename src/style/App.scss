@@ -17,6 +17,15 @@ a {
 html {
   background-color: #0f0f0f;
   font-size: 16px;
+  @media screen and (max-width: 1000px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 325px) {
+    font-size: 10px;
+  }
 }
 
 .App {

@@ -50,6 +50,10 @@ const Home = () => {
             <Links />
           </motion.div>
         </div>
+        <div className="homeMobile">
+          <p className="name">Nour Khattab</p>
+          <h2 className="desc">I'm a Frontend Developer from syria</h2>
+        </div>
       </div>
     </>
   );

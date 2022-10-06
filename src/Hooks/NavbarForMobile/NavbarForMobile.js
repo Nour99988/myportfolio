@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const NavbarForMobile = () => {
   const [show, setShow] = useState(true);
+  console.log(show);
   const [x, setX] = useState(100);
   const toogleShow = () => {
     show ? setX(0) : setX(100);

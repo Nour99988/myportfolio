@@ -89,11 +89,3 @@ window.addEventListener("mousemove", () => {
   //   console.log(spots);
 });
 // mouse trail
-
-const dataFromApi = [];
-
-fetch("https://fakestoreapi.com/products/1")
-  .then((res) => res.json())
-  .then((data) => {
-    dataFromApi = [...data];
-  });

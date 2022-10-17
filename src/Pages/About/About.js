@@ -32,7 +32,7 @@ const About = () => {
           <div className="big-header">LEARN MORE ABOUT ME</div>
           <div className=" personal wrap">
             <div className="img">
-              <img src="./img/me.jpg" alt="me" />
+              <img src="./img/me3.jpg" alt="me" />
             </div>
             <div className="content ">
               <div className="mid-header">

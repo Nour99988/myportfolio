@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <div className="background">
-        <img src="./img/bg.jpg" alt="cover" />
+        <img src="./img/bg1.jpg" alt="cover" />
       </div>
 
       <AnimatePresence exitBeforeEnter>

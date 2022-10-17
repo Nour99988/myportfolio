@@ -2,9 +2,6 @@
   .homeMobile {
     display: block;
   }
-  .home .content {
-    display: none;
-  }
 }
 .home {
   height: 100vh;

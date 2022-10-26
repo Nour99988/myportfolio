@@ -36,11 +36,9 @@ const About = () => {
             </div>
             <div className="content ">
               <div className="mid-header">
-                Front End Developer <br />
-                <p className="desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
+                I study at syrian virtual university I will graduate after 6 month and I work as frontend developer with
+                freelance team since 2021 and I work at FocalX currently. always looking for enhance my skills <br />
+                <p className="desc">I am Frontend developer,</p>
               </div>
               <div className="flex">
                 <p>
@@ -69,10 +67,10 @@ const About = () => {
                 </p>
               </div>
               <div className="footer">
-                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et
-                ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis
-                quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat
-                cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                Looking for a position as a Reactjs developer in a dynamic firm that values my analytical and technical
+                skills and provides scope for updating my knowledge, I seek a company that will help me contribute to
+                its development while concurrently aiding my personal growth and use these skills in providing quality
+                service to the company
               </div>
             </div>
           </div>

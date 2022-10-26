@@ -1,0 +1,26 @@
+.slider .carousel {
+  width: 90vw;
+  margin: auto;
+  overflow: hidden;
+  background-color: blue;
+}
+.slider .inner-carousel {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.slider .inner-carousel .img {
+  width: 400px;
+  margin: 15px;
+  border: 1px solid red;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.slider .inner-carousel .img img {
+  width: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}/*# sourceMappingURL=Slider.css.map */

@@ -1,0 +1,23 @@
+.slider {
+  .carousel {
+    width: 90vw;
+    margin: auto;
+    overflow: hidden;
+    background-color: blue;
+  }
+  .inner-carousel {
+    display: flex;
+    width: fit-content;
+    cursor: grab;
+    .img {
+      width: 400px;
+      margin: 15px;
+      border: 1px solid red;
+      cursor: grab;
+      img {
+        width: 100%;
+        cursor: grab;
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@ import Services from "./Pages/Services/Services";
 import Contact from "./Pages/Contact/Contact";
 import { AnimatePresence } from "framer-motion";
 import NavbarForMobile from "./Hooks/NavbarForMobile/NavbarForMobile";
+import Slider from "./Hooks/Slider/Slider";
 function App() {
   const location = useLocation();
   return (
@@ -22,6 +23,7 @@ function App() {
         <NavbarForMobile />
         <Routes location={location} key={location.key}>
           <Route path="/" element={<Home />} />
+          <Route path="/test" element={<Slider />} />
           <Route path="/About" element={<About />} />
           <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/Resume" element={<Resume />} />

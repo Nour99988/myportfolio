@@ -24,12 +24,8 @@ const NavbarForMobile = () => {
           <li>
             <NavLink to="/Resume">Resume</NavLink>
           </li>
-          <li>
-            <NavLink to="/Services">Services</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Portfolio">Portfolio</NavLink>
-          </li>
+          <li>{/* <NavLink to="/Services">Services</NavLink> */}</li>
+          <li>{/* <NavLink to="/Portfolio">Portfolio</NavLink> */}</li>
           <li>
             <NavLink to="/Contact">Contact</NavLink>
           </li>

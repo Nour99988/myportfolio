@@ -23,11 +23,11 @@ function App() {
         <NavbarForMobile />
         <Routes location={location} key={location.key}>
           <Route path="/" element={<Home />} />
-          <Route path="/test" element={<Slider />} />
+          {/* <Route path="/test" element={<Slider />} /> */}
           <Route path="/About" element={<About />} />
           <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/Resume" element={<Resume />} />
-          <Route path="/Services" element={<Services />} />
+          {/* <Route path="/Services" element={<Services />} /> */}
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>

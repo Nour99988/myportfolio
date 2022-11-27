@@ -36,9 +36,12 @@ const About = () => {
             </div>
             <div className="content ">
               <div className="mid-header">
-                I study at syrian virtual university I will graduate after 6 month and I work as frontend developer with
-                freelance team since 2021 and I work at FocalX currently. always looking for enhance my skills <br />
-                <p className="desc">I am Frontend developer,</p>
+                Front End Developer <br />
+                <p className="desc">
+                  I study at syrian virtual university I will graduate after 6 month and I work as frontend developer
+                  with freelance team since 2021 and I work at FocalX currently. always looking for enhance my skills{" "}
+                  <br />
+                </p>
               </div>
               <div className="flex">
                 <p>

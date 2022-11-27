@@ -14,9 +14,9 @@ const Links = () => {
       <li>
         <NavLink to="/Resume">Resume</NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink to="/Services">Services</NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink to="/Portfolio">Portfolio</NavLink>
       </li>

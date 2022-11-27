@@ -49,10 +49,15 @@ const Contact = () => {
                 <div>
                   <span className="title"> Social Profiles</span>
                   <p>
-                    <a href="w">
+                    <a
+                      href="https://www.linkedin.com/in/nour-kh-b843ba209"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Linkdin"
+                    >
                       <Linkedin />
                     </a>
-                    <a href="w">
+                    <a href="https://github.com/Nour99988" target="_blank" rel="noopener noreferrer" title="Github">
                       <Github />
                     </a>
                   </p>
